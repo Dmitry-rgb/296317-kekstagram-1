@@ -1,5 +1,6 @@
 import {getRandomElement, getRandomInteger} from './get-random.js';
 
+
 const descriptions = [
   'Rhinoceros',
   'Guinea Fowl',
@@ -36,7 +37,7 @@ const createComment = () => ({
 
 const createOffer = (_, index) => ({
   id: index + 1,
-  url: `photos/${ index + 1 }.jpg`,
+  url: `photos/${ index + 1}.jpg`,
   description: getRandomElement(descriptions),
   likes: getRandomInteger(15, 200),
   comments: Array.from({ length: getRandomInteger(0, 10) }, createComment),
