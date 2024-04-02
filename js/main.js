@@ -1,4 +1,6 @@
-import {createOffers} from './data.js';
+import { createOffers } from './data.js';
+import { renderOffers } from './render.js';
 
-// eslint-disable-next-line no-console
-console.log(createOffers(2));
+const offers = createOffers(20);
+
+renderOffers(offers);
