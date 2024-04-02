@@ -3,7 +3,6 @@ const templateElement = document.querySelector('#picture').content;
 const pictures = document.querySelector('.pictures');
 
 const renderOffers = (offers) => {
-  pictures.querySelectorAll('.picture').forEach((element) => element.remove());
 
   const fragment = document.createDocumentFragment();
   offers.forEach((offer) => {
